@@ -16,7 +16,7 @@ code {
 
 /* Navbar */
 
-.navbar-nav li a{
+.navbar-nav li a {
   font-size: 17px;
 }
 
@@ -44,24 +44,4 @@ code {
 .product img:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-
-
-
-/* Mobile */
-@media only screen and(max-width: 739px){
- .navbar-brand {
-   display: block;
- }
-}
-
-/* Tablet: */
-@media only screen and (min-width: 740px) and (max-width: 1023px) {
-
-}
-
-/* PC */
-@media only screen and (min-width:1024px) {
-
 }
