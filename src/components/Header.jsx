@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import CartBtn from "./buttons/CartBtn";
-import Login from "./buttons/Login/Login";
-import Signup from "./buttons/Login/Signup";
+import Login from "./buttons/Login";
+import Signup from "./buttons/Signup";
 
 const Header = () => {
   return (
@@ -20,37 +20,42 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <NavLink className="nav-link active" aria-current="page" to="/">
-                  Trang chủ
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/products">
-                  Sản phẩm
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/about">
-                  Về chúng tôi
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">
-                  Liên hệ
-                </NavLink>
-              </li>
-            </ul>
-          <NavLink className="navbar-brand mx-auto fw-bold" to="/">
-            Cửa hàng Apple
-          </NavLink>
-          <Login />
-          <Signup />
-          <CartBtn/>
-        </div>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div>
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <NavLink className="nav-link" aria-current="page" to="/">
+                    Trang chủ
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/products">
+                    Sản phẩm
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/about">
+                    Về chúng tôi
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/contact">
+                    Liên hệ
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+
+            <NavLink className="navbar-brand mx-auto fw-bold d-flex justify-content-center" to="/">
+              APPLE STORE
+            </NavLink>
+            <div className="d-flex">
+              <Login />
+              <Signup />
+              <CartBtn />
+            </div>
           </div>
+        </div>
       </nav>
     </>
   );

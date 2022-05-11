@@ -10,7 +10,7 @@ const Login = () => {
         data-bs-toggle="modal"
         data-bs-target="#loginModal"
       >
-        <span className='fa fa-sign-in me-1'></span> Đăng nhập
+        <span className="fa fa-sign-in me-1"></span> Đăng nhập
       </button>
 
       {/* <!-- Modal --> */}
@@ -35,12 +35,14 @@ const Login = () => {
               ></button>
             </div>
             <div className="modal-body">
-                <button className="btn btn-primary w-100 mb-4">
-                    <span className='fa fa-google me-2'></span> Đăng nhập bằng Google
-                </button>
-                <button className="btn btn-primary w-100 mb-4">
-                    <span className='fa fa-facebook me-2'></span> Đăng nhập bằng Facebook
-                </button>
+              <button className="btn btn-primary w-100 mb-4">
+                <span className="fa fa-google me-2"></span> Đăng nhập bằng
+                Google
+              </button>
+              <button className="btn btn-primary w-100 mb-4">
+                <span className="fa fa-facebook me-2"></span> Đăng nhập bằng
+                Facebook
+              </button>
               <form>
                 <div className="mb-3">
                   <label htmlFor="exampleInputEmail1" className="form-label">
@@ -52,7 +54,6 @@ const Login = () => {
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
                   />
-                 
                 </div>
                 <div className="mb-3">
                   <label htmlFor="exampleInputPassword1" className="form-label">
@@ -64,8 +65,11 @@ const Login = () => {
                     id="exampleInputPassword1"
                   />
                 </div>
-               
-                <button type="submit" className="btn btn-outline-primary w-100 mt-5">
+
+                <button
+                  type="submit"
+                  className="btn btn-outline-primary w-100 mt-5"
+                >
                   Đăng nhập
                 </button>
               </form>
